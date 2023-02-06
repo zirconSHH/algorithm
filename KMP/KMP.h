@@ -5,7 +5,7 @@
 namespace KMP
 {
 	//calculate next array
-	std::vector<int> getnextarr(std::string target)
+	std::vector<int> getnextarr(const std::string& target)
 	{
 		int index_t = 1;
 		int index_n = 0;
@@ -29,7 +29,7 @@ namespace KMP
 	}
 
 	//return first's index
-	int getMatchIndex(std::string source, std::string target)
+	int getMatchIndex(const std::string& source, const std::string& target)
 	{
 		std::vector<int> next_arr = getnextarr(target);
 		int index_s = 0;
